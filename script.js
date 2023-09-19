@@ -4,7 +4,7 @@ const messageDiv = document.getElementById('message');
 
 textInput.addEventListener('input', function () {
     const inputValue = textInput.value;
-    const outputText = 'Tớ yêu bạn Thoa xinh gái nhất :>>';
+    const outputText = 'Tớ yêu Phùng nhất :>>';
 
     if (inputValue.length > 0) {
         textInput.value = outputText.substring(0, inputValue.length);
@@ -19,7 +19,7 @@ submitButton.addEventListener('click', function () {
         messageDiv.innerHTML = '<strong>Tớ biết mà!</strong>';
     } else {
         messageDiv.classList.add('alert', 'alert-danger');
-        messageDiv.innerHTML = '<strong>So sad!</strong>';
+        messageDiv.innerHTML = '<strong>À Không có gì để nói với nhau luôn!</strong>';
     }
 
 });
