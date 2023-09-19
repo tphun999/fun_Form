@@ -4,7 +4,7 @@ const messageDiv = document.getElementById('message');
 
 textInput.addEventListener('input', function () {
     const inputValue = textInput.value;
-    const outputText = 'Tớ yêu Tài nhất :>>';
+    const outputText = 'Tớ yêu bạn Thoa xinh gái nhất :>>';
 
     if (inputValue.length > 0) {
         textInput.value = outputText.substring(0, inputValue.length);
