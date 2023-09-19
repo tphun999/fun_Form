@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    background-image: url('https://f10-zpcloud.zdn.vn/2458057547727804667/390dc301899a5cc4058b.jpg');
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+@keyframes falling-flowers {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.dwJEPtbrWuVB_IznuB8e-AHaFa&pid=Api&P=0&h=180');
+    /* Đổi thành URL của hình ảnh hoa bạn muốn sử dụng */
+    background-size: cover;
+    animation: falling-flowers 5s linear infinite;
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #ebebeb;
+    user-select: none;
+    z-index: 1000;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.snowflake:hover {
+    cursor: default
+}
